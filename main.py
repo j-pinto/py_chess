@@ -4,6 +4,7 @@ from dataclasses import dataclass
 class Piece:
     color: str
     type: str
+    is_dead: bool = False
     has_moved: bool = False
     position: list[int,int]
     available_moves: list[list[int,int]] = []
