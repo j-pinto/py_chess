@@ -30,6 +30,6 @@ def initialize_pieces(color: str):
   pieces.append(Piece(color=color, type="R", position=[piece_rank, 7]))
 
   for pawn_file in range(8):
-    pieces.append(Piece(color, "P", False, [pawn_rank, pawn_file], []))
+    pieces.append(Piece(color=color, type="P", position=[pawn_rank, pawn_file]))
 
   return pieces
