@@ -33,3 +33,9 @@ def initialize_pieces():
 
 def is_in_bounds(position: list[int]) -> bool:
   return 0 <= position[0] <= 7 and 0 <= position[1] <= 7
+
+def is_occupied(position: list[int], pieces: list[Piece]) -> bool:
+  for piece in pieces:
+    if piece.position == position:
+      return True
+  return False    
