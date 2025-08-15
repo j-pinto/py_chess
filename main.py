@@ -20,14 +20,14 @@ def initialize_pieces(color: str):
 
   pieces = list[Piece]    
   
-  pieces.append(Piece(color=color, type="R", has_moved=False, position=[piece_rank, 0], available_moves=[]))
-  pieces.append(Piece(color=color, type="N", has_moved=False, position=[piece_rank, 1], available_moves=[]))
-  pieces.append(Piece(color=color, type="B", has_moved=False, position=[piece_rank, 2], available_moves=[]))
-  pieces.append(Piece(color=color, type="Q", has_moved=False, position=[piece_rank, 3], available_moves=[]))
-  pieces.append(Piece(color=color, type="K", has_moved=False, position=[piece_rank, 4], available_moves=[]))
-  pieces.append(Piece(color=color, type="B", has_moved=False, position=[piece_rank, 5], available_moves=[]))
-  pieces.append(Piece(color=color, type="N", has_moved=False, position=[piece_rank, 6], available_moves=[]))
-  pieces.append(Piece(color=color, type="R", has_moved=False, position=[piece_rank, 7], available_moves=[]))
+  pieces.append(Piece(color=color, type="R", position=[piece_rank, 0]))
+  pieces.append(Piece(color=color, type="N", position=[piece_rank, 1]))
+  pieces.append(Piece(color=color, type="B", position=[piece_rank, 2]))
+  pieces.append(Piece(color=color, type="Q", position=[piece_rank, 3]))
+  pieces.append(Piece(color=color, type="K", position=[piece_rank, 4]))
+  pieces.append(Piece(color=color, type="B", position=[piece_rank, 5]))
+  pieces.append(Piece(color=color, type="N", position=[piece_rank, 6]))
+  pieces.append(Piece(color=color, type="R", position=[piece_rank, 7]))
 
   for pawn_file in range(8):
     pieces.append(Piece(color, "P", False, [pawn_rank, pawn_file], []))
