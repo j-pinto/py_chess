@@ -1,11 +1,11 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 @dataclass
 class Piece:
     color: str
     type: str
     position: list[int]
-    available_moves: list[list[int]]
+    available_moves: list[list[int]] = field(default_factory=list)
     has_moved: bool = False
     is_dead: bool = False
 
