@@ -5,8 +5,8 @@ class Piece:
     color: str
     type: str
     has_moved: bool
-    position: []
-    available_moves: []
+    position: list[int,int]
+    available_moves: list[list[int,int]]
 
 #initialize all pieces on the board
 def initialize_pieces(color):
