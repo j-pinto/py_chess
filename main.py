@@ -9,7 +9,7 @@ class Piece:
     available_moves: list[list[int,int]]
 
 #initialize all pieces on the board
-def initialize_pieces(color):
+def initialize_pieces(color: str):
   if color == "white":
     piece_rank = 0
     pawn_rank = 1
@@ -17,7 +17,7 @@ def initialize_pieces(color):
     piece_rank = 7
     pawn_rank = 6
 
-  pieces = []    
+  pieces = list[Piece]    
   
   pieces.append(Piece(color, "R", False, [piece_rank, 0], []))
   pieces.append(Piece(color, "N", False, [piece_rank, 1], []))
