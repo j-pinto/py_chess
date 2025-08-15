@@ -4,14 +4,14 @@ from dataclasses import dataclass
 class Piece:
     color: str
     type: str
-    position: list[int,int]
-    available_moves: list[list[int,int]] = []
+    position: list[int]
+    available_moves: list[list[int]]
     has_moved: bool = False
     is_dead: bool = False
 
 #initialize all pieces on the board
 def initialize_pieces():
-  pieces = list[Piece]    
+  pieces: list[Piece] = []
   
   for color in ["white", "black"]:
     piece_rank = 0 if color == "white" else 7
