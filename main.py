@@ -30,3 +30,6 @@ def initialize_pieces():
       pieces.append(Piece(color=color, type="P", position=[pawn_rank, pawn_file]))
 
   return pieces
+
+def is_in_bounds(position: list[int]) -> bool:
+  return 0 <= position[0] <= 7 and 0 <= position[1] <= 7
