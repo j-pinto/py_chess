@@ -18,17 +18,17 @@ def initialize_pieces(color):
     pawn_rank = 6
 
   pieces = []    
-    
-  pieces.append(Piece(color, "king", False, [piece_rank, 4], []))
-  pieces.append(Piece(color, "queen", False, [piece_rank, 3], []))
-  pieces.append(Piece(color, "bishop", False, [piece_rank, 2], []))
-  pieces.append(Piece(color, "bishop", False, [piece_rank, 5], []))
-  pieces.append(Piece(color, "knight", False, [piece_rank, 1], []))
-  pieces.append(Piece(color, "knight", False, [piece_rank, 6], []))
-  pieces.append(Piece(color, "rook", False, [piece_rank, 0], []))
-  pieces.append(Piece(color, "rook", False, [piece_rank, 7], []))
+  
+  pieces.append(Piece(color, "R", False, [piece_rank, 0], []))
+  pieces.append(Piece(color, "N", False, [piece_rank, 1], []))
+  pieces.append(Piece(color, "B", False, [piece_rank, 2], []))
+  pieces.append(Piece(color, "Q", False, [piece_rank, 3], []))
+  pieces.append(Piece(color, "K", False, [piece_rank, 4], []))
+  pieces.append(Piece(color, "B", False, [piece_rank, 5], []))
+  pieces.append(Piece(color, "N", False, [piece_rank, 6], []))
+  pieces.append(Piece(color, "R", False, [piece_rank, 7], []))
 
   for pawn_file in range(8):
-    pieces.append(Piece(color, "pawn", False, [pawn_rank, pawn_file], []))
+    pieces.append(Piece(color, "P", False, [pawn_rank, pawn_file], []))
 
   return pieces
